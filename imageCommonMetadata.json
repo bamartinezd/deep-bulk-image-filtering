@@ -1,0 +1,1637 @@
+[
+    {
+        "Name": "JPEG",
+        "Parent": null,
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": -3,
+                "TagType": -3,
+                "Description": "Baseline",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Compression Type",
+                "TagName": "Compression Type",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 0,
+                "TagType": 0,
+                "Description": "8 bits",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Data Precision",
+                "TagName": "Data Precision",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 1,
+                "TagType": 1,
+                "Description": "3472 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Image Height",
+                "TagName": "Image Height",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 3,
+                "TagType": 3,
+                "Description": "4624 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Image Width",
+                "TagName": "Image Width",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 5,
+                "TagType": 5,
+                "Description": "3",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Number of Components",
+                "TagName": "Number of Components",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 6,
+                "TagType": 6,
+                "Description": "Y component: Quantization table 0, Sampling factors 2 horiz/2 vert",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Component 1",
+                "TagName": "Component 1",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 7,
+                "TagType": 7,
+                "Description": "Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Component 2",
+                "TagName": "Component 2",
+                "DirectoryName": "JPEG"
+            },
+            {
+                "Type": 8,
+                "TagType": 8,
+                "Description": "Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Component 3",
+                "TagName": "Component 3",
+                "DirectoryName": "JPEG"
+            }
+        ],
+        "TagCount": 8,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "Exif IFD0",
+        "Parent": null,
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 256,
+                "TagType": 256,
+                "Description": "4624 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Image Width",
+                "TagName": "Image Width",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 257,
+                "TagType": 257,
+                "Description": "3472 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Image Height",
+                "TagName": "Image Height",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 271,
+                "TagType": 271,
+                "Description": "motorola",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Make",
+                "TagName": "Make",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 272,
+                "TagType": 272,
+                "Description": "moto g(100)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Model",
+                "TagName": "Model",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 274,
+                "TagType": 274,
+                "Description": "Top, left side (Horizontal / normal)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Orientation",
+                "TagName": "Orientation",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 282,
+                "TagType": 282,
+                "Description": "72 dots per inch",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "X Resolution",
+                "TagName": "X Resolution",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 283,
+                "TagType": 283,
+                "Description": "72 dots per inch",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Y Resolution",
+                "TagName": "Y Resolution",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 296,
+                "TagType": 296,
+                "Description": "Inch",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Resolution Unit",
+                "TagName": "Resolution Unit",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 306,
+                "TagType": 306,
+                "Description": "2022:01:21 12:52:38",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Date/Time",
+                "TagName": "Date/Time",
+                "DirectoryName": "Exif IFD0"
+            },
+            {
+                "Type": 531,
+                "TagType": 531,
+                "Description": "Center of pixel array",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "YCbCr Positioning",
+                "TagName": "YCbCr Positioning",
+                "DirectoryName": "Exif IFD0"
+            }
+        ],
+        "TagCount": 10,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "Exif SubIFD",
+        "Parent": {
+            "Name": "Exif IFD0",
+            "Parent": null,
+            "IsEmpty": false,
+            "Tags": [
+                {
+                    "Type": 256,
+                    "TagType": 256,
+                    "Description": "4624 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Image Width",
+                    "TagName": "Image Width",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 257,
+                    "TagType": 257,
+                    "Description": "3472 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Image Height",
+                    "TagName": "Image Height",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 271,
+                    "TagType": 271,
+                    "Description": "motorola",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Make",
+                    "TagName": "Make",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 272,
+                    "TagType": 272,
+                    "Description": "moto g(100)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Model",
+                    "TagName": "Model",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 274,
+                    "TagType": 274,
+                    "Description": "Top, left side (Horizontal / normal)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Orientation",
+                    "TagName": "Orientation",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 282,
+                    "TagType": 282,
+                    "Description": "72 dots per inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "X Resolution",
+                    "TagName": "X Resolution",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 283,
+                    "TagType": 283,
+                    "Description": "72 dots per inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Y Resolution",
+                    "TagName": "Y Resolution",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 296,
+                    "TagType": 296,
+                    "Description": "Inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Resolution Unit",
+                    "TagName": "Resolution Unit",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 306,
+                    "TagType": 306,
+                    "Description": "2022:01:21 12:52:38",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Date/Time",
+                    "TagName": "Date/Time",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 531,
+                    "TagType": 531,
+                    "Description": "Center of pixel array",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "YCbCr Positioning",
+                    "TagName": "YCbCr Positioning",
+                    "DirectoryName": "Exif IFD0"
+                }
+            ],
+            "TagCount": 10,
+            "HasError": false,
+            "Errors": []
+        },
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 33434,
+                "TagType": 33434,
+                "Description": "1/995 sec",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exposure Time",
+                "TagName": "Exposure Time",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 33437,
+                "TagType": 33437,
+                "Description": "f/1.7",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "F-Number",
+                "TagName": "F-Number",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 34850,
+                "TagType": 34850,
+                "Description": "Unknown (0)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exposure Program",
+                "TagName": "Exposure Program",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 34855,
+                "TagType": 34855,
+                "Description": "100",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "ISO Speed Ratings",
+                "TagName": "ISO Speed Ratings",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 36864,
+                "TagType": 36864,
+                "Description": "2.20",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exif Version",
+                "TagName": "Exif Version",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 36867,
+                "TagType": 36867,
+                "Description": "2022:01:21 12:52:38",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Date/Time Original",
+                "TagName": "Date/Time Original",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 36868,
+                "TagType": 36868,
+                "Description": "2022:01:21 12:52:38",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Date/Time Digitized",
+                "TagName": "Date/Time Digitized",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37121,
+                "TagType": 37121,
+                "Description": "YCbCr",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Components Configuration",
+                "TagName": "Components Configuration",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37377,
+                "TagType": 37377,
+                "Description": "1/994 sec",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Shutter Speed Value",
+                "TagName": "Shutter Speed Value",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37378,
+                "TagType": 37378,
+                "Description": "f/1.7",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Aperture Value",
+                "TagName": "Aperture Value",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37379,
+                "TagType": 37379,
+                "Description": "0.0",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Brightness Value",
+                "TagName": "Brightness Value",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37380,
+                "TagType": 37380,
+                "Description": "0 EV",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exposure Bias Value",
+                "TagName": "Exposure Bias Value",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37381,
+                "TagType": 37381,
+                "Description": "f/1.7",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Max Aperture Value",
+                "TagName": "Max Aperture Value",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37383,
+                "TagType": 37383,
+                "Description": "Average",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Metering Mode",
+                "TagName": "Metering Mode",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37384,
+                "TagType": 37384,
+                "Description": "D65",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "White Balance",
+                "TagName": "White Balance",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37385,
+                "TagType": 37385,
+                "Description": "Flash did not fire, auto",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Flash",
+                "TagName": "Flash",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37386,
+                "TagType": 37386,
+                "Description": "4.8 mm",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Focal Length",
+                "TagName": "Focal Length",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37500,
+                "TagType": 37500,
+                "Description": "[858 values]",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Makernote",
+                "TagName": "Makernote",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37520,
+                "TagType": 37520,
+                "Description": "854553",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Sub-Sec Time",
+                "TagName": "Sub-Sec Time",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37521,
+                "TagType": 37521,
+                "Description": "854553",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Sub-Sec Time Original",
+                "TagName": "Sub-Sec Time Original",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 37522,
+                "TagType": 37522,
+                "Description": "854553",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Sub-Sec Time Digitized",
+                "TagName": "Sub-Sec Time Digitized",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 40960,
+                "TagType": 40960,
+                "Description": "1.00",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "FlashPix Version",
+                "TagName": "FlashPix Version",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 40961,
+                "TagType": 40961,
+                "Description": "sRGB",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Color Space",
+                "TagName": "Color Space",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 40962,
+                "TagType": 40962,
+                "Description": "4624 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exif Image Width",
+                "TagName": "Exif Image Width",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 40963,
+                "TagType": 40963,
+                "Description": "3472 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exif Image Height",
+                "TagName": "Exif Image Height",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41495,
+                "TagType": 41495,
+                "Description": "Unknown (0)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Sensing Method",
+                "TagName": "Sensing Method",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41729,
+                "TagType": 41729,
+                "Description": "Unknown (0)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Scene Type",
+                "TagName": "Scene Type",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41986,
+                "TagType": 41986,
+                "Description": "Auto exposure",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exposure Mode",
+                "TagName": "Exposure Mode",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41987,
+                "TagType": 41987,
+                "Description": "Auto white balance",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "White Balance Mode",
+                "TagName": "White Balance Mode",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41988,
+                "TagType": 41988,
+                "Description": "1",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Digital Zoom Ratio",
+                "TagName": "Digital Zoom Ratio",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41989,
+                "TagType": 41989,
+                "Description": "Unknown",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Focal Length 35",
+                "TagName": "Focal Length 35",
+                "DirectoryName": "Exif SubIFD"
+            },
+            {
+                "Type": 41990,
+                "TagType": 41990,
+                "Description": "Standard",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Scene Capture Type",
+                "TagName": "Scene Capture Type",
+                "DirectoryName": "Exif SubIFD"
+            }
+        ],
+        "TagCount": 32,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "Interoperability",
+        "Parent": {
+            "Name": "Exif SubIFD",
+            "Parent": {
+                "Name": "Exif IFD0",
+                "Parent": null,
+                "IsEmpty": false,
+                "Tags": [
+                    {
+                        "Type": 256,
+                        "TagType": 256,
+                        "Description": "4624 pixels",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Image Width",
+                        "TagName": "Image Width",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 257,
+                        "TagType": 257,
+                        "Description": "3472 pixels",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Image Height",
+                        "TagName": "Image Height",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 271,
+                        "TagType": 271,
+                        "Description": "motorola",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Make",
+                        "TagName": "Make",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 272,
+                        "TagType": 272,
+                        "Description": "moto g(100)",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Model",
+                        "TagName": "Model",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 274,
+                        "TagType": 274,
+                        "Description": "Top, left side (Horizontal / normal)",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Orientation",
+                        "TagName": "Orientation",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 282,
+                        "TagType": 282,
+                        "Description": "72 dots per inch",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "X Resolution",
+                        "TagName": "X Resolution",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 283,
+                        "TagType": 283,
+                        "Description": "72 dots per inch",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Y Resolution",
+                        "TagName": "Y Resolution",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 296,
+                        "TagType": 296,
+                        "Description": "Inch",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Resolution Unit",
+                        "TagName": "Resolution Unit",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 306,
+                        "TagType": 306,
+                        "Description": "2022:01:21 12:52:38",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "Date/Time",
+                        "TagName": "Date/Time",
+                        "DirectoryName": "Exif IFD0"
+                    },
+                    {
+                        "Type": 531,
+                        "TagType": 531,
+                        "Description": "Center of pixel array",
+                        "HasName": true,
+                        "HasTagName": true,
+                        "Name": "YCbCr Positioning",
+                        "TagName": "YCbCr Positioning",
+                        "DirectoryName": "Exif IFD0"
+                    }
+                ],
+                "TagCount": 10,
+                "HasError": false,
+                "Errors": []
+            },
+            "IsEmpty": false,
+            "Tags": [
+                {
+                    "Type": 33434,
+                    "TagType": 33434,
+                    "Description": "1/995 sec",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exposure Time",
+                    "TagName": "Exposure Time",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 33437,
+                    "TagType": 33437,
+                    "Description": "f/1.7",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "F-Number",
+                    "TagName": "F-Number",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 34850,
+                    "TagType": 34850,
+                    "Description": "Unknown (0)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exposure Program",
+                    "TagName": "Exposure Program",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 34855,
+                    "TagType": 34855,
+                    "Description": "100",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "ISO Speed Ratings",
+                    "TagName": "ISO Speed Ratings",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 36864,
+                    "TagType": 36864,
+                    "Description": "2.20",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exif Version",
+                    "TagName": "Exif Version",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 36867,
+                    "TagType": 36867,
+                    "Description": "2022:01:21 12:52:38",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Date/Time Original",
+                    "TagName": "Date/Time Original",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 36868,
+                    "TagType": 36868,
+                    "Description": "2022:01:21 12:52:38",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Date/Time Digitized",
+                    "TagName": "Date/Time Digitized",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37121,
+                    "TagType": 37121,
+                    "Description": "YCbCr",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Components Configuration",
+                    "TagName": "Components Configuration",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37377,
+                    "TagType": 37377,
+                    "Description": "1/994 sec",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Shutter Speed Value",
+                    "TagName": "Shutter Speed Value",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37378,
+                    "TagType": 37378,
+                    "Description": "f/1.7",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Aperture Value",
+                    "TagName": "Aperture Value",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37379,
+                    "TagType": 37379,
+                    "Description": "0.0",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Brightness Value",
+                    "TagName": "Brightness Value",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37380,
+                    "TagType": 37380,
+                    "Description": "0 EV",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exposure Bias Value",
+                    "TagName": "Exposure Bias Value",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37381,
+                    "TagType": 37381,
+                    "Description": "f/1.7",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Max Aperture Value",
+                    "TagName": "Max Aperture Value",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37383,
+                    "TagType": 37383,
+                    "Description": "Average",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Metering Mode",
+                    "TagName": "Metering Mode",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37384,
+                    "TagType": 37384,
+                    "Description": "D65",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "White Balance",
+                    "TagName": "White Balance",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37385,
+                    "TagType": 37385,
+                    "Description": "Flash did not fire, auto",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Flash",
+                    "TagName": "Flash",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37386,
+                    "TagType": 37386,
+                    "Description": "4.8 mm",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Focal Length",
+                    "TagName": "Focal Length",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37500,
+                    "TagType": 37500,
+                    "Description": "[858 values]",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Makernote",
+                    "TagName": "Makernote",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37520,
+                    "TagType": 37520,
+                    "Description": "854553",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Sub-Sec Time",
+                    "TagName": "Sub-Sec Time",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37521,
+                    "TagType": 37521,
+                    "Description": "854553",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Sub-Sec Time Original",
+                    "TagName": "Sub-Sec Time Original",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 37522,
+                    "TagType": 37522,
+                    "Description": "854553",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Sub-Sec Time Digitized",
+                    "TagName": "Sub-Sec Time Digitized",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 40960,
+                    "TagType": 40960,
+                    "Description": "1.00",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "FlashPix Version",
+                    "TagName": "FlashPix Version",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 40961,
+                    "TagType": 40961,
+                    "Description": "sRGB",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Color Space",
+                    "TagName": "Color Space",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 40962,
+                    "TagType": 40962,
+                    "Description": "4624 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exif Image Width",
+                    "TagName": "Exif Image Width",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 40963,
+                    "TagType": 40963,
+                    "Description": "3472 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exif Image Height",
+                    "TagName": "Exif Image Height",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41495,
+                    "TagType": 41495,
+                    "Description": "Unknown (0)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Sensing Method",
+                    "TagName": "Sensing Method",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41729,
+                    "TagType": 41729,
+                    "Description": "Unknown (0)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Scene Type",
+                    "TagName": "Scene Type",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41986,
+                    "TagType": 41986,
+                    "Description": "Auto exposure",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Exposure Mode",
+                    "TagName": "Exposure Mode",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41987,
+                    "TagType": 41987,
+                    "Description": "Auto white balance",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "White Balance Mode",
+                    "TagName": "White Balance Mode",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41988,
+                    "TagType": 41988,
+                    "Description": "1",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Digital Zoom Ratio",
+                    "TagName": "Digital Zoom Ratio",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41989,
+                    "TagType": 41989,
+                    "Description": "Unknown",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Focal Length 35",
+                    "TagName": "Focal Length 35",
+                    "DirectoryName": "Exif SubIFD"
+                },
+                {
+                    "Type": 41990,
+                    "TagType": 41990,
+                    "Description": "Standard",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Scene Capture Type",
+                    "TagName": "Scene Capture Type",
+                    "DirectoryName": "Exif SubIFD"
+                }
+            ],
+            "TagCount": 32,
+            "HasError": false,
+            "Errors": []
+        },
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 1,
+                "TagType": 1,
+                "Description": "Recommended Exif Interoperability Rules (ExifR98)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Interoperability Index",
+                "TagName": "Interoperability Index",
+                "DirectoryName": "Interoperability"
+            },
+            {
+                "Type": 2,
+                "TagType": 2,
+                "Description": "1.00",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Interoperability Version",
+                "TagName": "Interoperability Version",
+                "DirectoryName": "Interoperability"
+            }
+        ],
+        "TagCount": 2,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "GPS",
+        "Parent": {
+            "Name": "Exif IFD0",
+            "Parent": null,
+            "IsEmpty": false,
+            "Tags": [
+                {
+                    "Type": 256,
+                    "TagType": 256,
+                    "Description": "4624 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Image Width",
+                    "TagName": "Image Width",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 257,
+                    "TagType": 257,
+                    "Description": "3472 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Image Height",
+                    "TagName": "Image Height",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 271,
+                    "TagType": 271,
+                    "Description": "motorola",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Make",
+                    "TagName": "Make",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 272,
+                    "TagType": 272,
+                    "Description": "moto g(100)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Model",
+                    "TagName": "Model",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 274,
+                    "TagType": 274,
+                    "Description": "Top, left side (Horizontal / normal)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Orientation",
+                    "TagName": "Orientation",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 282,
+                    "TagType": 282,
+                    "Description": "72 dots per inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "X Resolution",
+                    "TagName": "X Resolution",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 283,
+                    "TagType": 283,
+                    "Description": "72 dots per inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Y Resolution",
+                    "TagName": "Y Resolution",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 296,
+                    "TagType": 296,
+                    "Description": "Inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Resolution Unit",
+                    "TagName": "Resolution Unit",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 306,
+                    "TagType": 306,
+                    "Description": "2022:01:21 12:52:38",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Date/Time",
+                    "TagName": "Date/Time",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 531,
+                    "TagType": 531,
+                    "Description": "Center of pixel array",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "YCbCr Positioning",
+                    "TagName": "YCbCr Positioning",
+                    "DirectoryName": "Exif IFD0"
+                }
+            ],
+            "TagCount": 10,
+            "HasError": false,
+            "Errors": []
+        },
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 1,
+                "TagType": 1,
+                "Description": "N",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Latitude Ref",
+                "TagName": "GPS Latitude Ref",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 2,
+                "TagType": 2,
+                "Description": "3\u00B0 11\u0027 39.42\u0022",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Latitude",
+                "TagName": "GPS Latitude",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 3,
+                "TagType": 3,
+                "Description": "W",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Longitude Ref",
+                "TagName": "GPS Longitude Ref",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 4,
+                "TagType": 4,
+                "Description": "-74\u00B0 15\u0027 43.34\u0022",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Longitude",
+                "TagName": "GPS Longitude",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 5,
+                "TagType": 5,
+                "Description": "Sea level",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Altitude Ref",
+                "TagName": "GPS Altitude Ref",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 6,
+                "TagType": 6,
+                "Description": "586.39 metres",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Altitude",
+                "TagName": "GPS Altitude",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 7,
+                "TagType": 7,
+                "Description": "17:52:38.000 UTC",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Time-Stamp",
+                "TagName": "GPS Time-Stamp",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 27,
+                "TagType": 27,
+                "Description": "GPS",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Processing Method",
+                "TagName": "GPS Processing Method",
+                "DirectoryName": "GPS"
+            },
+            {
+                "Type": 29,
+                "TagType": 29,
+                "Description": "2022:01:21",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "GPS Date Stamp",
+                "TagName": "GPS Date Stamp",
+                "DirectoryName": "GPS"
+            }
+        ],
+        "TagCount": 9,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "Exif Thumbnail",
+        "Parent": {
+            "Name": "Exif IFD0",
+            "Parent": null,
+            "IsEmpty": false,
+            "Tags": [
+                {
+                    "Type": 256,
+                    "TagType": 256,
+                    "Description": "4624 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Image Width",
+                    "TagName": "Image Width",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 257,
+                    "TagType": 257,
+                    "Description": "3472 pixels",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Image Height",
+                    "TagName": "Image Height",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 271,
+                    "TagType": 271,
+                    "Description": "motorola",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Make",
+                    "TagName": "Make",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 272,
+                    "TagType": 272,
+                    "Description": "moto g(100)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Model",
+                    "TagName": "Model",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 274,
+                    "TagType": 274,
+                    "Description": "Top, left side (Horizontal / normal)",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Orientation",
+                    "TagName": "Orientation",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 282,
+                    "TagType": 282,
+                    "Description": "72 dots per inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "X Resolution",
+                    "TagName": "X Resolution",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 283,
+                    "TagType": 283,
+                    "Description": "72 dots per inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Y Resolution",
+                    "TagName": "Y Resolution",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 296,
+                    "TagType": 296,
+                    "Description": "Inch",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Resolution Unit",
+                    "TagName": "Resolution Unit",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 306,
+                    "TagType": 306,
+                    "Description": "2022:01:21 12:52:38",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "Date/Time",
+                    "TagName": "Date/Time",
+                    "DirectoryName": "Exif IFD0"
+                },
+                {
+                    "Type": 531,
+                    "TagType": 531,
+                    "Description": "Center of pixel array",
+                    "HasName": true,
+                    "HasTagName": true,
+                    "Name": "YCbCr Positioning",
+                    "TagName": "YCbCr Positioning",
+                    "DirectoryName": "Exif IFD0"
+                }
+            ],
+            "TagCount": 10,
+            "HasError": false,
+            "Errors": []
+        },
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 40962,
+                "TagType": 40962,
+                "Description": "246 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exif Image Width",
+                "TagName": "Exif Image Width",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 40963,
+                "TagType": 40963,
+                "Description": "184 pixels",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Exif Image Height",
+                "TagName": "Exif Image Height",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 259,
+                "TagType": 259,
+                "Description": "JPEG (old-style)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Compression",
+                "TagName": "Compression",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 274,
+                "TagType": 274,
+                "Description": "Top, left side (Horizontal / normal)",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Orientation",
+                "TagName": "Orientation",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 282,
+                "TagType": 282,
+                "Description": "72 dots per inch",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "X Resolution",
+                "TagName": "X Resolution",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 283,
+                "TagType": 283,
+                "Description": "72 dots per inch",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Y Resolution",
+                "TagName": "Y Resolution",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 296,
+                "TagType": 296,
+                "Description": "Inch",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Resolution Unit",
+                "TagName": "Resolution Unit",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 513,
+                "TagType": 513,
+                "Description": "1996 bytes",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Thumbnail Offset",
+                "TagName": "Thumbnail Offset",
+                "DirectoryName": "Exif Thumbnail"
+            },
+            {
+                "Type": 514,
+                "TagType": 514,
+                "Description": "16839 bytes",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Thumbnail Length",
+                "TagName": "Thumbnail Length",
+                "DirectoryName": "Exif Thumbnail"
+            }
+        ],
+        "TagCount": 9,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "Huffman",
+        "Parent": null,
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 1,
+                "TagType": 1,
+                "Description": "4 Huffman tables",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Number of Tables",
+                "TagName": "Number of Tables",
+                "DirectoryName": "Huffman"
+            }
+        ],
+        "TagCount": 1,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "File Type",
+        "Parent": null,
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 1,
+                "TagType": 1,
+                "Description": "JPEG",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Detected File Type Name",
+                "TagName": "Detected File Type Name",
+                "DirectoryName": "File Type"
+            },
+            {
+                "Type": 2,
+                "TagType": 2,
+                "Description": "Joint Photographic Experts Group",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Detected File Type Long Name",
+                "TagName": "Detected File Type Long Name",
+                "DirectoryName": "File Type"
+            },
+            {
+                "Type": 3,
+                "TagType": 3,
+                "Description": "image/jpeg",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Detected MIME Type",
+                "TagName": "Detected MIME Type",
+                "DirectoryName": "File Type"
+            },
+            {
+                "Type": 4,
+                "TagType": 4,
+                "Description": "jpg",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "Expected File Name Extension",
+                "TagName": "Expected File Name Extension",
+                "DirectoryName": "File Type"
+            }
+        ],
+        "TagCount": 4,
+        "HasError": false,
+        "Errors": []
+    },
+    {
+        "Name": "File",
+        "Parent": null,
+        "IsEmpty": false,
+        "Tags": [
+            {
+                "Type": 1,
+                "TagType": 1,
+                "Description": "1692165421-IMG_20220121_125238454.jpg",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "File Name",
+                "TagName": "File Name",
+                "DirectoryName": "File"
+            },
+            {
+                "Type": 2,
+                "TagType": 2,
+                "Description": "7363093 bytes",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "File Size",
+                "TagName": "File Size",
+                "DirectoryName": "File"
+            },
+            {
+                "Type": 3,
+                "TagType": 3,
+                "Description": "mar. nov. 14 22:43:45 -05:00 2023",
+                "HasName": true,
+                "HasTagName": true,
+                "Name": "File Modified Date",
+                "TagName": "File Modified Date",
+                "DirectoryName": "File"
+            }
+        ],
+        "TagCount": 3,
+        "HasError": false,
+        "Errors": []
+    }
+]
