@@ -1,24 +1,37 @@
 ﻿
 using MetadataExtractor;
-using MetadataExtractor.Formats.Iso14496.Boxes;
-using System.Text.Json;
 
 public class Program
 {
     public static void Main (string[] args){
         //string pathToImage = @"C:\Users\Public\Documents\Camera\20240218_081621.jpg";// Windows
-        //string pathToImage = @"/media/bamartinezd/8256A54E56A5442F/Users/Public/Documents/Camera/20240218_081621.jpg";// Linux
-        string directoryPath = @"/media/bamartinezd/8256A54E56A5442F/Users/Public/Documents/";// Linux
-        //string directoryPath = @"/run/user/1000/gvfs/mtp:host=SAMSUNG_SAMSUNG_Android_R5CX228RV0E/Almacenamiento interno";
-        //string directoryPath = @"/media/bamartinezd/8256A54E56A5442F/Users/Public/Documents/Wlpprs";// Linux
-        IEnumerable<string> filePaths = System.IO.Directory.EnumerateFiles(directoryPath,"*.jpg", SearchOption.AllDirectories);
+        //string pathToImage = @"/media/bamartinezd/8256A54E56A5442F/Users/Public/Documents/Camera/20240218_081621.jpg";
+
+        Console.WriteLine("Copy and paste here your source image directory:");
+        string sourcePath = Console.ReadLine();
+        while (!System.IO.Directory.Exists(sourcePath))
+        {
+            Console.WriteLine($"{sourcePath} is an invalid directory, try again.");
+            sourcePath = Console.ReadLine();
+        }
+
+        
+        Console.WriteLine("Copy and paste here your destination image directory:");
+        string destinationPath = Console.ReadLine();
+        while (!System.IO.Directory.Exists(destinationPath))
+        {
+            Console.WriteLine($"{sourcePath} is an invalid directory, try again.");
+            destinationPath = Console.ReadLine();
+        }
+
+        IEnumerable<string> filePaths = System.IO.Directory.EnumerateFiles(sourcePath, "*.jpg", SearchOption.AllDirectories);
 
         foreach (var filePath in filePaths)
         {
             if (IsAspectRatioSixteenNinths(filePath)){
                 
                 Console.WriteLine($"{filePath}: {IsAspectRatioSixteenNinths(filePath)}");
-                //System.IO.File.Copy(filePath, $"/media/bamartinezd/8256A54E56A5442F/Users/Public/Documents/4k169Imgs/img-{Guid.NewGuid()}.jpg", false);
+                File.Copy(filePath, $"{destinationPath}/img-{Guid.NewGuid()}.jpg", false);
             }
         }
     }
