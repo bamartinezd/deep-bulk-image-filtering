@@ -1,5 +1,5 @@
-﻿
-using MetadataExtractor;
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Metadata.Profiles.Exif;
 
 public class Program
 {
@@ -28,44 +28,32 @@ public class Program
 
         foreach (var filePath in filePaths)
         {
-            if (IsAspectRatioSixteenNinths(filePath)){
-                
-                Console.WriteLine($"{filePath}: {IsAspectRatioSixteenNinths(filePath)}");
-                File.Copy(filePath, $"{destinationPath}/img-{Guid.NewGuid()}.jpg", false);
+            using (var image = Image.Load(filePath))
+            {
+                int imageWidth = image.Width;
+                int imageHeight = image.Height;
+
+                var exifProfile = image.Metadata.ExifProfile;
+                var orientation= exifProfile.GetValue(ExifTag.Orientation).Value;
+
+                if (imageWidth < 4096)
+                {
+                    continue;
+                }
+
+                var result = IsAspectRatioSixteenNinths(imageWidth,imageHeight);
+
+                if (result){
+                    Console.WriteLine($"{filePath}: {result}");
+                    File.Copy(filePath, $"{destinationPath}/{orientation}/img-{Guid.NewGuid()}.jpg", true);
+                }
             }
         }
     }
 
-    public static bool IsAspectRatioSixteenNinths(string pathToImage){
-        var directories = ImageMetadataReader.ReadMetadata(pathToImage);
-        
-        var imageHeightTag = directories
-            .SelectMany(directory => directory.Tags)
-            .FirstOrDefault(tag => tag.Name == "Image Height");
-
-        var imageWidthTag = directories
-            .SelectMany(directory => directory.Tags)
-            .FirstOrDefault(tag => tag.Name == "Image Width");
-
-        double imageHeight = int.Parse(imageHeightTag.Description.Split(" ")[0]);
-        double imageWidth = int.Parse(imageWidthTag.Description.Split(" ")[0]);
-
+    public static bool IsAspectRatioSixteenNinths(double imageWidth, double imageHeight){
         var sixteenNinths = 16.0/9.0;
-        //Console.WriteLine($"16.0/9.0: { Math.Round(sixteenNinths,2) }");
-        
         var imgAspectRatio = imageWidth / imageHeight;
-        // Console.WriteLine($"imageWidth: {imageWidth}");
-        // Console.WriteLine($"imageHeight: {imageHeight}");
-        // Console.WriteLine($"imageWidth / imageHeight: {Math.Round(imgAspectRatio, 2)}");
-
-        bool result = (Math.Round(imgAspectRatio, 2) == Math.Round(sixteenNinths,2)); 
-
-        // Taking only 4k Images
-        if (imageWidth < 4000)
-        {
-            result = false;
-        }
-
-        return result;
+        return (Math.Round(imgAspectRatio, 2) == Math.Round(sixteenNinths,2));
     }
 }
