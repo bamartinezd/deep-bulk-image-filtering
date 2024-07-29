@@ -1,5 +1,8 @@
-﻿using SixLabors.ImageSharp;
+﻿using MetadataExtractor;
+using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Metadata.Profiles.Exif;
+using System.Diagnostics;
+using Directory = System.IO.Directory;
 
 public class Program
 {
@@ -33,20 +36,29 @@ public class Program
                 int imageWidth = image.Width;
                 int imageHeight = image.Height;
 
-                var exifProfile = image.Metadata.ExifProfile;
-                var orientation= exifProfile.GetValue(ExifTag.Orientation).Value;
-
-                if (imageWidth < 4096)
+                if (imageWidth < 4000)
                 {
                     continue;
                 }
 
-                var result = IsAspectRatioSixteenNinths(imageWidth,imageHeight);
+                var exifProfile = image.Metadata.ExifProfile;
+                if (exifProfile is not null)
+                {
+                    exifProfile.TryGetValue(ExifTag.Orientation, out var orientation);
+                    var result = IsAspectRatioSixteenNinths(imageWidth, imageHeight);
 
-                if (result){
-                    Console.WriteLine($"{filePath}: {result}");
-                    File.Copy(filePath, $"{destinationPath}/{orientation}/img-{Guid.NewGuid()}.jpg", true);
+                    if (result)
+                    {
+                        Console.WriteLine($"{filePath}: {result}");
+
+                        string destinationFile = $"{destinationPath}/{orientation}/img-{Guid.NewGuid()}.jpg";
+
+                        string destinationDirectory = Path.GetDirectoryName(destinationFile);
+                        Directory.CreateDirectory(destinationDirectory);
+                        File.Copy(filePath, destinationFile, true);
+                    }
                 }
+                
             }
         }
     }
