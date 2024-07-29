@@ -1,7 +1,5 @@
-﻿using MetadataExtractor;
-using SixLabors.ImageSharp;
+﻿using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Metadata.Profiles.Exif;
-using System.Diagnostics;
 using Directory = System.IO.Directory;
 
 public class Program
