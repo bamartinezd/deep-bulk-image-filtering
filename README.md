@@ -26,4 +26,4 @@ Filter criteria:
     Portrait flipped.
 
 
-Just run the dotnet 8 console application and provide source/destination directories. 🫰 
+Just run the dotnet 8 console application, provide source/destination directories and walahh. 🫰 
