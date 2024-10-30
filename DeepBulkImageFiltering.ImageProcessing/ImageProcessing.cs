@@ -49,7 +49,7 @@ public class ImageProcessor
 
                     string destinationFile = $"{_destinationPath}/{orientation}/{aspectRatio}/img-{Guid.NewGuid()}.jpg";
 
-                    string destinationDirectory = Path.GetDirectoryName(destinationFile);
+                    string? destinationDirectory = Path.GetDirectoryName(destinationFile);
                     Directory.CreateDirectory(destinationDirectory);
                     File.Copy(filePath, destinationFile, true);
                 }
