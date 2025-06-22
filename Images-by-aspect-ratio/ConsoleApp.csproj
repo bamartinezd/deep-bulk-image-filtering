@@ -13,8 +13,4 @@
     <PackageReference Include="SixLabors.ImageSharp" Version="3.1.10" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DeepBulkImageFiltering.ImageProcessing\DeepBulkImageFiltering.ImageProcessing.csproj" />
-  </ItemGroup>
-
 </Project>
