@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiAppDbif.MainPage"
+             Title="Deep Bulk Image Filtering">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            
+            <!-- Header -->
+            <Label Text="Deep Bulk Image Filtering"
+                   Style="{StaticResource Headline}"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <!-- Source Folder Selection -->
+            <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                   Padding="15"
+                   CornerRadius="8">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Source Folder" 
+                           Style="{StaticResource SubHeadline}"/>
+                    <Label x:Name="SourcePathLabel" 
+                           Text="No folder selected"
+                           TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray400}}"
+                           LineBreakMode="TailTruncation"/>
+                    <Button x:Name="SelectSourceButton"
+                            Text="Select Source Folder"
+                            Clicked="OnSelectSourceFolder"
+                            HorizontalOptions="Fill"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Destination Folder Selection -->
+            <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                   Padding="15"
+                   CornerRadius="8">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Destination Folder" 
+                           Style="{StaticResource SubHeadline}"/>
+                    <Label x:Name="DestinationPathLabel" 
+                           Text="No folder selected"
+                           TextColor="{AppThemeBinding Light={StaticResource Gray500}, Dark={StaticResource Gray400}}"
+                           LineBreakMode="TailTruncation"/>
+                    <Button x:Name="SelectDestinationButton"
+                            Text="Select Destination Folder"
+                            Clicked="OnSelectDestinationFolder"
+                            HorizontalOptions="Fill"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Processing Controls -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button x:Name="StartButton"
+                        Text="Start Processing"
+                        Clicked="OnStartProcessing"
+                        IsEnabled="False"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        Padding="20,10"/>
+                <Button x:Name="StopButton"
+                        Text="Stop"
+                        Clicked="OnStopProcessing"
+                        IsEnabled="False"
+                        BackgroundColor="{StaticResource Danger}"
+                        TextColor="White"
+                        Padding="20,10"/>
+            </HorizontalStackLayout>
+
+            <!-- Progress Section -->
+            <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                   Padding="15"
+                   CornerRadius="8">
+                <VerticalStackLayout Spacing="15">
+                    <Label Text="Processing Progress" 
+                           Style="{StaticResource SubHeadline}"/>
+                    
+                    <!-- Progress Bar -->
+                    <ProgressBar x:Name="ProgressBar" 
+                                 Progress="0"
+                                 ProgressColor="{StaticResource Primary}"/>
+                    
+                    <!-- Progress Details -->
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto">
+                        <Label Grid.Column="0" Grid.Row="0" Text="Processed:" FontSize="12"/>
+                        <Label Grid.Column="1" Grid.Row="0" Text="Copied:" FontSize="12"/>
+                        <Label Grid.Column="0" Grid.Row="1" x:Name="ProcessedLabel" Text="0"/>
+                        <Label Grid.Column="1" Grid.Row="1" x:Name="CopiedLabel" Text="0"/>
+                    </Grid>
+
+                    <!-- Current File Info -->
+                    <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                           Padding="10"
+                           CornerRadius="4">
+                        <VerticalStackLayout Spacing="5">
+                            <Label Text="Current File:" FontSize="12"/>
+                            <Label x:Name="CurrentFileLabel" 
+                                   Text="No file being processed"
+                                   FontSize="11"
+                                   LineBreakMode="TailTruncation"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Image Preview Section -->
+            <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                   Padding="15"
+                   CornerRadius="8">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Image Preview" 
+                           Style="{StaticResource SubHeadline}"/>
+                    
+                    <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                           HeightRequest="200"
+                           CornerRadius="4"
+                           BackgroundColor="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray900}}">
+                        <Image x:Name="PreviewImage" 
+                               Aspect="AspectFit"
+                               Margin="5"/>
+                    </Frame>
+                    
+                    <Label x:Name="ImageInfoLabel" 
+                           Text="No image selected"
+                           FontSize="11"
+                           LineBreakMode="WordWrap"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Status Bar -->
+            <Frame BorderColor="{AppThemeBinding Light={StaticResource Gray300}, Dark={StaticResource Gray600}}"
+                   Padding="10"
+                   CornerRadius="4">
+                <Label x:Name="StatusLabel" 
+                       Text="Ready to process images"
+                       VerticalOptions="Center"/>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
