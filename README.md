@@ -98,13 +98,10 @@ The application currently filters for:
 
 ## 📦 Dependencies
 
-- **SixLabors.ImageSharp** (3.1.5) - Image processing and metadata extraction
+- **SixLabors.ImageSharp** (3.1.10) - Image processing and metadata extraction
 - **MetadataExtractor** (2.8.1) - EXIF metadata handling
 
 ## 🐛 Known Issues
-
-- SixLabors.ImageSharp 3.1.5 has a known high severity vulnerability (GHSA-2cmq-823j-5qj8)
-- Consider updating to a newer version when available
 
 ## 🤝 Contributing
 
