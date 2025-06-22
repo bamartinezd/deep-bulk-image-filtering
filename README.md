@@ -1,29 +1,129 @@
-# images-by-aspect-ratio
+# Deep Bulk Image Filtering
 
-Specific and bulk filtering capabilities of images from metadata.
-Filter criteria:
-  ## Resolution, standard resolutions like: 
-      **3840x2160** (4K UHD): Contains four times as many pixels as 1080p and is ideal for professional graphic design and video editing.
-      ### TO DO
-      **1920x1080**  Full HD (FHD) and below, Used by many of the world's population.
-      **2560x1440 and 2560x1600** (2K): More expensive and expansive than 1080p screens.
-      **7680x4320** (8K): The highest resolution currently available.
-    
-  ## Aspect Ratio
-    **16:9:** Also known as 1.78:1 or widescreen, this aspect ratio is today's most common for widescreen HDTV and most computer monitors.
-    **9:16:** This aspect ratio is the most popular for social media platforms, such as Instagram Stories or TikTok videos, and is primarily used for content designed for mobile devices.
-    ### TO DO
-    **4:3:** Also known as 1.33:1 or fullscreen, this aspect ratio was common on traditional television.
-    **1.85:1 and 2.40:1:** These aspect ratios are common in cinematography.
-    **3:2:** This aspect ratio is common in still photography.
-    **5:4 (1.25:1):** This aspect ratio was popularized by photographers of the past using 5x4 film in large format photography. While it still exists in the age of digital sensors, it is extremely rare and is only recognized as a standard for prints.
-    **1:1:** This aspect ratio means that the width and height of an image are equal, creating a square. It's common for print photos, mobile devices, and social media platforms, but not ideal for most TV or digital formats.
-    
-  ## Image orientation 
-    Landscape, normal, horizontal.
-    Portrait, vertical, 90 degrees.
-    Landscape flipped.
-    Portrait flipped.
+A powerful .NET 8 console application for bulk filtering and organizing images based on metadata criteria including resolution, aspect ratio, and orientation.
 
+## 🚀 Features
 
-Just run the dotnet 8 console application, provide source/destination directories and walahh. 🫰 
+### Resolution Filtering
+The application supports filtering by standard resolutions:
+
+- **3840x2160 (4K UHD)** - Professional grade resolution with four times the pixels of 1080p, ideal for graphic design and video editing
+- **1920x1080 (Full HD)** - Standard resolution used by most displays worldwide *(Coming Soon)*
+- **2560x1440/1600 (2K)** - High-end resolution for premium displays *(Coming Soon)*
+- **7680x4320 (8K)** - Ultra-high resolution for future-proof content *(Coming Soon)*
+
+### Aspect Ratio Detection
+Automatically identifies and filters images by aspect ratio:
+
+- **16:9 (1.78:1)** - Widescreen format, most common for HDTV and computer monitors
+- **9:16** - Mobile-optimized format, popular for Instagram Stories and TikTok
+- **4:3 (1.33:1)** - Traditional fullscreen format *(Coming Soon)*
+- **1.85:1 & 2.40:1** - Cinematic aspect ratios *(Coming Soon)*
+- **3:2** - Standard photography format *(Coming Soon)*
+- **5:4 (1.25:1)** - Large format photography standard *(Coming Soon)*
+- **1:1** - Square format for social media and prints *(Coming Soon)*
+
+### Image Orientation Support
+Handles all image orientations:
+- **Landscape** - Normal horizontal orientation
+- **Portrait** - Vertical orientation (90° rotation)
+- **Landscape Flipped** - Inverted horizontal orientation
+- **Portrait Flipped** - Inverted vertical orientation
+
+## 📋 Prerequisites
+
+- .NET 8.0 SDK or Runtime
+- Windows, macOS, or Linux
+
+## 🛠️ Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/deep-bulk-image-filtering.git
+cd deep-bulk-image-filtering
+```
+
+2. Navigate to the project directory:
+```bash
+cd Images-by-aspect-ratio
+```
+
+3. Restore dependencies:
+```bash
+dotnet restore
+```
+
+## 🚀 Usage
+
+1. Run the application:
+```bash
+dotnet run
+```
+
+2. Follow the interactive prompts:
+   - Enter the **source directory** containing your images
+   - Enter the **destination directory** where filtered images will be saved
+
+3. The application will automatically:
+   - Scan all JPG files in the source directory (including subdirectories)
+   - Filter images based on resolution (minimum 4000px width)
+   - Check aspect ratio (currently 16:9)
+   - Organize images by orientation in the destination folder
+   - Generate unique filenames using GUIDs
+
+## 📁 Output Structure
+
+```
+destination/
+├── 1/          # Normal orientation
+│   ├── img-{guid}.jpg
+│   └── ...
+├── 3/          # 180° rotation
+│   ├── img-{guid}.jpg
+│   └── ...
+├── 6/          # 90° clockwise rotation
+│   ├── img-{guid}.jpg
+│   └── ...
+└── 8/          # 270° clockwise rotation
+    ├── img-{guid}.jpg
+    └── ...
+```
+
+## 🔧 Configuration
+
+The application currently filters for:
+- **Minimum resolution**: 4000px width
+- **Aspect ratio**: 16:9 (1.78:1)
+- **File format**: JPG only
+
+## 📦 Dependencies
+
+- **SixLabors.ImageSharp** (3.1.5) - Image processing and metadata extraction
+- **MetadataExtractor** (2.8.1) - EXIF metadata handling
+
+## 🐛 Known Issues
+
+- SixLabors.ImageSharp 3.1.5 has a known high severity vulnerability (GHSA-2cmq-823j-5qj8)
+- Consider updating to a newer version when available
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with .NET 8
+- Powered by SixLabors.ImageSharp for image processing
+- Uses MetadataExtractor for EXIF data handling
+
+---
+
+**Note**: This application is designed for bulk processing of large image collections. Ensure you have sufficient disk space and backup your original images before processing.
