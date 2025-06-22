@@ -16,15 +16,29 @@ public class ImageProcessor
 
     public void ProcessImages()
     {
-        IEnumerable<string> filePaths = Directory.EnumerateFiles(_sourcePath, "*.jpg", SearchOption.AllDirectories);
+        var filePaths = Directory.EnumerateFiles(_sourcePath, "*.jpg", SearchOption.AllDirectories).ToList();
+        int totalImages = filePaths.Count;
+        int processedImages = 0;
+        int copiedImages = 0;
+
+        Console.WriteLine($"Found {totalImages} images to process.");
+        Console.WriteLine("Processing images...");
 
         foreach (var filePath in filePaths)
         {
-            ProcessImage(filePath);
+            processedImages++;
+            bool wasCopied = ProcessImage(filePath);
+            if (wasCopied) copiedImages++;
+
+            // Update progress bar
+            UpdateProgressBar(processedImages, totalImages, copiedImages);
         }
+
+        Console.WriteLine();
+        Console.WriteLine($"Processing complete! Processed {processedImages} images, copied {copiedImages} images.");
     }
 
-    private void ProcessImage(string filePath)
+    private bool ProcessImage(string filePath)
     {
         using (var image = Image.Load(filePath))
         {
@@ -33,7 +47,7 @@ public class ImageProcessor
 
             if (imageWidth < 3840 || imageHeight < 2160)
             {
-                return;
+                return false;
             }
 
             var exifProfile = image.Metadata.ExifProfile;
@@ -45,16 +59,33 @@ public class ImageProcessor
 
                 if (!string.IsNullOrEmpty(aspectRatio))
                 {
-                    Console.WriteLine($"{filePath}: {aspectRatio}");
-
                     string destinationFile = $"{_destinationPath}/{orientation}/{aspectRatio}/img-{Guid.NewGuid()}.jpg";
 
                     string? destinationDirectory = Path.GetDirectoryName(destinationFile);
-                    Directory.CreateDirectory(destinationDirectory);
-                    File.Copy(filePath, destinationFile, true);
+                    if (!string.IsNullOrEmpty(destinationDirectory))
+                    {
+                        Directory.CreateDirectory(destinationDirectory);
+                        File.Copy(filePath, destinationFile, true);
+                        return true;
+                    }
                 }
             }
         }
+        return false;
+    }
+
+    private void UpdateProgressBar(int current, int total, int copied)
+    {
+        int progressBarWidth = 50;
+        float percentage = (float)current / total;
+        int filledWidth = (int)(progressBarWidth * percentage);
+        
+        string progressBar = "[";
+        progressBar += new string('█', filledWidth);
+        progressBar += new string('░', progressBarWidth - filledWidth);
+        progressBar += "]";
+        
+        Console.Write($"\r{progressBar} {current}/{total} ({percentage:P1}) - Copied: {copied}");
     }
 
     private string GetAspectRatio(double imageWidth, double imageHeight)
@@ -64,7 +95,7 @@ public class ImageProcessor
         //if (IsAspectRatioThreeTwo(imageWidth, imageHeight)) return "3_2";
         //if (IsAspectRatioOneToOne(imageWidth, imageHeight)) return "1_1";
         //if (IsAspectRatioTwentyOneNine(imageWidth, imageHeight)) return "21_9";
-        return null;
+        return string.Empty;
     }
 
     private bool IsAspectRatioSixteenNinths(double imageWidth, double imageHeight) => IsAspectRatio(imageWidth, imageHeight, 16.0 / 9.0);
