@@ -1,6 +1,6 @@
 # Deep Bulk Image Filtering
 
-A powerful .NET 8 console application for bulk filtering and organizing images based on metadata criteria including resolution, aspect ratio, and orientation.
+A powerful .NET 8 application for bulk filtering and organizing images based on metadata criteria including resolution, aspect ratio, and orientation. Available as a console application, desktop GUI (Avalonia), and mobile app (MAUI).
 
 ## 🚀 Features
 
@@ -30,48 +30,96 @@ Handles all image orientations:
 - **Landscape Flipped** - Inverted horizontal orientation
 - **Portrait Flipped** - Inverted vertical orientation
 
+## 📱 Available Applications
+
+### 1. Console Application (`Images-by-aspect-ratio/`)
+- **Cross-platform** command-line interface
+- **Lightweight** and fast processing
+- **Automated** batch processing
+- **Progress tracking** with visual progress bars
+
+### 2. Desktop GUI (`AvaloniaApp/`)
+- **Modern desktop interface** built with Avalonia UI
+- **Cross-platform** (Windows, macOS, Linux)
+- **Visual progress tracking** with progress bars and counters
+- **Real-time image preview** during processing
+- **Folder picker dialogs** for easy source/destination selection
+- **Start/Stop controls** for processing management
+
+### 3. Mobile App (`MauiAppDbif/`)
+- **Native mobile experience** built with .NET MAUI
+- **Android support** (iOS coming soon)
+- **Touch-optimized interface** with proper spacing and controls
+- **File picker integration** for mobile file selection
+- **Real-time progress updates** and image preview
+- **Responsive design** for different screen sizes
+
 ## 📋 Prerequisites
 
 - .NET 8.0 SDK or Runtime
-- Windows, macOS, or Linux
+- Windows, macOS, or Linux (for console and desktop)
+- Android device or emulator (for mobile app)
 
-## 🛠️ Installation
+## 🛠️ Installation & Usage
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/deep-bulk-image-filtering.git
-cd deep-bulk-image-filtering
-```
+### Console Application
 
-2. Navigate to the project directory:
+1. Navigate to the console project:
 ```bash
 cd Images-by-aspect-ratio
 ```
 
-3. Restore dependencies:
-```bash
-dotnet restore
-```
-
-## 🚀 Usage
-
-1. Run the application:
+2. Run the application:
 ```bash
 dotnet run
 ```
 
-2. Follow the interactive prompts:
-   - Enter the **source directory** containing your images
-   - Enter the **destination directory** where filtered images will be saved
+3. Follow the interactive prompts to select source and destination directories.
 
-3. The application will automatically:
-   - Scan all JPG files in the source directory (including subdirectories)
-   - Filter images based on resolution (minimum 4000px width)
-   - Check aspect ratio (currently 16:9)
-   - Organize images by orientation in the destination folder
-   - Generate unique filenames using GUIDs
+### Desktop GUI (Avalonia)
+
+1. Navigate to the Avalonia project:
+```bash
+cd AvaloniaApp
+```
+
+2. Run the desktop application:
+```bash
+dotnet run
+```
+
+3. Use the GUI to:
+   - Select source and destination folders using the "Browse" buttons
+   - Click "Start Processing" to begin filtering
+   - Monitor progress with the progress bar and counters
+   - View current image preview and processing status
+   - Stop processing at any time with the "Stop" button
+
+### Mobile App (MAUI)
+
+1. Navigate to the MAUI project:
+```bash
+cd MauiAppDbif
+```
+
+2. Build for Android:
+```bash
+dotnet build -f net8.0-android
+```
+
+3. Create release APK:
+```bash
+dotnet publish -f net8.0-android -c Release
+```
+
+4. Install on Android device:
+   - Enable Developer Options and USB Debugging on your device
+   - Connect via USB and run: `dotnet build -f net8.0-android -t:Install`
+   - Or manually install the APK from `bin/Release/net8.0-android/MauiAppDbif-Signed.apk`
 
 ## 📁 Output Structure
+
+All applications generate the same organized output structure:
 
 ```
 destination/
@@ -92,16 +140,45 @@ destination/
 ## 🔧 Configuration
 
 The application currently filters for:
-- **Minimum resolution**: 4000px width
+- **Minimum resolution**: 3840x2160 (4K)
 - **Aspect ratio**: 16:9 (1.78:1)
-- **File format**: JPG only
+- **File formats**: JPG, JPEG, PNG, BMP, TIFF, TIF
 
 ## 📦 Dependencies
 
+### Core Library (`DeepBulkImageFiltering.ImageProcessing/`)
 - **SixLabors.ImageSharp** (3.1.10) - Image processing and metadata extraction
+
+### Console Application
+- **SixLabors.ImageSharp** (3.1.10) - Image processing
 - **MetadataExtractor** (2.8.1) - EXIF metadata handling
 
+### Desktop GUI (Avalonia)
+- **Avalonia** (11.1.4) - Cross-platform UI framework
+- **Avalonia.Controls.DataGrid** (11.1.4) - Data grid controls
+- **SixLabors.ImageSharp** (3.1.10) - Image processing
+
+### Mobile App (MAUI)
+- **Microsoft.Maui.Controls** - Mobile UI framework
+- **CommunityToolkit.Maui** (7.0.1) - Additional UI controls
+- **SixLabors.ImageSharp** (3.1.10) - Image processing
+
+## 🎯 UI Features Comparison
+
+| Feature | Console | Desktop GUI | Mobile App |
+|---------|---------|-------------|------------|
+| **Platform Support** | Windows/macOS/Linux | Windows/macOS/Linux | Android (iOS soon) |
+| **Progress Tracking** | Text-based | Visual progress bar | Visual progress bar |
+| **Image Preview** | ❌ | ✅ Real-time preview | ✅ Real-time preview |
+| **Folder Selection** | Text input | Dialog picker | File picker |
+| **Processing Control** | ❌ | ✅ Start/Stop | ✅ Start/Stop |
+| **Touch Support** | ❌ | ❌ | ✅ |
+| **Responsive Design** | ❌ | ✅ | ✅ |
+
 ## 🐛 Known Issues
+
+- Mobile app uses file picker instead of folder picker (platform limitation)
+- iOS support for mobile app coming soon
 
 ## 🤝 Contributing
 
@@ -119,6 +196,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built with .NET 8
 - Powered by SixLabors.ImageSharp for image processing
+- Desktop UI built with Avalonia
+- Mobile UI built with .NET MAUI
 - Uses MetadataExtractor for EXIF data handling
 
 ---
